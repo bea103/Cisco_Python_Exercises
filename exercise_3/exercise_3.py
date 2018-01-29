@@ -29,7 +29,7 @@ for i, line in enumerate(open('ShowIpRoute.txt')):
         List_oi.insert(i, match.group('interface'))
 
 for j in range(0, len(List_protocols)):  # We assume that every list has the same number of items
-    print "Protocol:           "+List_protocols[j]
+    print "Protocol:           " + List_protocols[j]
     print "Prefix:             " + List_prefix[j]
     print "AD/Metric:          " + List_ad_metric[j]
     print "Next-Hop:           " + List_NH[j]
