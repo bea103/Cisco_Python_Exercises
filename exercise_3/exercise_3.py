@@ -1,7 +1,7 @@
 import re
 
 pattern = r"(?P<input>\w+)\s*(?P<prefix>\d*\.\d*\.\d*\.\d*)\s*\[(?P<metric>\d*\/\d*)\]\s*via" \
-          r"\s*(?P<via>\d*\.\d*\.\d*\.\d*)\s*,\s*(?P<time>\d*.\d*.\d*),\s*(?P<interface>.*)"
+          r"\s*(?P<via>\d*\.\d*\.\d*\.\d*)\s*,\s*(?P<time>\d*.\d*.\d*)\s*,\s*(?P<interface>.*)"
 dic={'L' : 'local', 'C' : 'connected', 'S' : 'static', 'R' : 'RIP', 'M' : 'mobile', 'B' : 'BGP',
        'D' : 'EIGRP', 'EX' : 'EIGRP external', 'O' : 'OSPF', 'IA' : 'OSPF inter area',
        'N1' : 'OSPF NSSA external type 1', 'N2' : 'OSPF NSSA external type 2',
